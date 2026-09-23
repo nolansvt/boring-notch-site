@@ -99,12 +99,18 @@
     <li>the mixer's sound levels, computed live: no audio is recorded or kept.</li>
   </ul>
 
-  <h2>The one outgoing connection</h2>
-  <p>If you turn lyrics on, the app queries <strong>lrclib.net</strong>, an open,
-    community-run lyrics database. The request contains the title and artist of the
-    current track and nothing else: no account, machine or user identifier. Lyrics
-    that come back are held in memory for the session and are never written to disk.
-    Turn lyrics off and the app connects to nothing at all.</p>
+  <h2>What the app looks up online</h2>
+  <p>Two things only, and never with an account, machine or user identifier:</p>
+  <ul>
+    <li><strong>Cover art.</strong> Spotify covers are downloaded from Spotify's image
+      server, at the address Spotify provides for the track. When Music has no cover
+      for a streamed track, it is looked up by title, artist and album in Apple's
+      public iTunes catalog.</li>
+    <li><strong>Lyrics</strong>, only if you turn them on: the app queries
+      <strong>lrclib.net</strong>, an open community database, with the track's title
+      and artist.</li>
+  </ul>
+  <p>Everything that comes back stays in memory and is never written to disk.</p>
 
   <h2>Permissions</h2>
   <p>Each permission the app asks for serves one feature, and declining it stops only
