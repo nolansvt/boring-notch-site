@@ -45,6 +45,24 @@
   dt { font-weight: 600; margin-top: 16px; }
   dt:first-child { margin-top: 0; }
   dd { margin: 4px 0 0; color: var(--muted); }
+  nav.lang {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-bottom: 28px;
+    font-size: 13px;
+  }
+  nav.lang a {
+    color: var(--muted);
+    text-decoration: none;
+    padding: 4px 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+  nav.lang a[aria-current] {
+    color: var(--text);
+    border-color: var(--text);
+  }
   footer {
     margin-top: 56px;
     padding-top: 20px;
@@ -57,6 +75,10 @@
 </head>
 <body>
 <main>
+  <nav class="lang">
+    <a href="index.html" aria-current="page">Français</a>
+    <a href="support.html">English</a>
+  </nav>
   <h1>boring notch</h1>
   <p class="lede">L'encoche de votre Mac, enfin utile. Assistance et contact.</p>
 

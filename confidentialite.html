@@ -44,7 +44,24 @@
   }
   ul { padding-left: 20px; }
   li { margin: 6px 0; }
-  .en { color: var(--muted); }
+  nav.lang {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-bottom: 28px;
+    font-size: 13px;
+  }
+  nav.lang a {
+    color: var(--muted);
+    text-decoration: none;
+    padding: 4px 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+  nav.lang a[aria-current] {
+    color: var(--text);
+    border-color: var(--text);
+  }
   footer {
     margin-top: 56px;
     padding-top: 20px;
@@ -57,6 +74,10 @@
 </head>
 <body>
 <main>
+  <nav class="lang">
+    <a href="confidentialite.html" aria-current="page">Français</a>
+    <a href="privacy.html">English</a>
+  </nav>
   <h1>Politique de confidentialité</h1>
   <p class="lede">boring notch — dernière mise à jour : 22 septembre 2026</p>
 
@@ -104,16 +125,6 @@
 
   <h2>Contact</h2>
   <p><a href="mailto:pro.boringteam@gmail.com">pro.boringteam@gmail.com</a></p>
-
-  <h2 class="en">Privacy policy (English summary)</h2>
-  <p class="en">boring notch collects no personal data. There is no account, no
-    advertising, no analytics and no server of ours. Files on the shelf, the quick
-    note, the clipboard history and all settings stay on your Mac. Calendar events
-    are read and displayed, never changed or stored. Audio levels in the mixer are
-    computed live and never recorded. The only outgoing request is made when lyrics
-    are enabled: the track title and artist are sent to lrclib.net, an open
-    community lyrics database, and nothing else. Contact:
-    <a href="mailto:pro.boringteam@gmail.com">pro.boringteam@gmail.com</a>.</p>
 
   <footer>
     Copyright © 2026 boring team. Tous droits réservés. —
