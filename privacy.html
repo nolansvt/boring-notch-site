@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>boring notch — Privacy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --text: #1c1c1e;
+    --muted: #6b6b70;
+    --line: #e4e4e7;
+    --card: #fafafa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101012;
+      --text: #f2f2f4;
+      --muted: #9b9ba1;
+      --line: #2a2a2e;
+      --card: #18181b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 64px 16px 96px; }
+  h1 { font-size: 34px; letter-spacing: -0.02em; margin: 0 0 4px; }
+  h2 { font-size: 20px; letter-spacing: -0.01em; margin: 40px 0 8px; }
+  p.lede { color: var(--muted); margin-top: 0; }
+  a { color: inherit; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 24px 0;
+    font-weight: 600;
+  }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  nav.lang {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-bottom: 28px;
+    font-size: 13px;
+  }
+  nav.lang a {
+    color: var(--muted);
+    text-decoration: none;
+    padding: 4px 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+  nav.lang a[aria-current] {
+    color: var(--text);
+    border-color: var(--text);
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <nav class="lang">
+    <a href="confidentialite.html">Français</a>
+    <a href="privacy.html" aria-current="page">English</a>
+  </nav>
+  <h1>Privacy policy</h1>
+  <p class="lede">boring notch — last updated: 23 September 2026</p>
+
+  <div class="card">
+    boring notch collects no personal data. There is no account, no advertising, no
+    analytics, and no server of ours.
+  </div>
+
+  <h2>What stays on your Mac</h2>
+  <p>Everything the app handles stays in its own storage on your computer, and is
+    never transmitted:</p>
+  <ul>
+    <li>the files dropped on the shelf, kept as references that macOS controls;</li>
+    <li>the quick note and the clipboard history;</li>
+    <li>your settings;</li>
+    <li>what is read from your calendar — displayed and then forgotten, never changed
+      or saved;</li>
+    <li>what Music and Spotify are playing, and their cover art;</li>
+    <li>the mixer's sound levels, computed live: no audio is recorded or kept.</li>
+  </ul>
+
+  <h2>The one outgoing connection</h2>
+  <p>If you turn lyrics on, the app queries <strong>lrclib.net</strong>, an open,
+    community-run lyrics database. The request contains the title and artist of the
+    current track and nothing else: no account, machine or user identifier. Lyrics
+    that come back are held in memory for the session and are never written to disk.
+    Turn lyrics off and the app connects to nothing at all.</p>
+
+  <h2>Permissions</h2>
+  <p>Each permission the app asks for serves one feature, and declining it stops only
+    that one: calendars to show your events, automation to control Music and Spotify,
+    system audio capture to set the volume app by app, accessibility for the keyboard
+    lock.</p>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children, and collects no data from anyone, whatever
+    their age.</p>
+
+  <h2>Changes</h2>
+  <p>Any change to this policy will be published on this page, with a new update
+    date.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:pro.boringteam@gmail.com">pro.boringteam@gmail.com</a></p>
+
+  <footer>
+    Copyright © 2026 boring team. All rights reserved. —
+    <a href="support.html">Support</a>
+  </footer>
+</main>
+</body>
+</html>
